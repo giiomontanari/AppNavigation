@@ -51,7 +51,7 @@ class DetalhesProdutoFragment : Fragment() {
             viewModel.produtoEncontrado.value?.let {
                 val bundle = Bundle()
                 bundle.putLong(CHAVE_PRODUTO_ID, produtoId)
-                controller.navigate(R.id.pagamento, bundle)
+                controller.navigate(R.id.action_detalhes_produto_to_pagamento, bundle)
             }
         }
     }
